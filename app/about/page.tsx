@@ -32,12 +32,6 @@ const values = [
   },
 ];
 
-const stats = [
-  { value: '50+', label: 'Projects Delivered' },
-  { value: '30+', label: 'Happy Clients' },
-  { value: '5+',  label: 'Years Experience' },
-  { value: '10+', label: 'Industries Served' },
-];
 
 export default function AboutPage() {
   return (
@@ -84,14 +78,13 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-6">
-              {stats.map(s => (
-                <div key={s.label} className="p-8 rounded-2xl bg-gradient-soft border border-brand-100 text-center">
-                  <div className="text-4xl font-extrabold gradient-text mb-2">{s.value}</div>
-                  <div className="text-sm font-medium text-slate-600">{s.label}</div>
-                </div>
-              ))}
+            <div className="flex items-center justify-center">
+              <div className="p-10 rounded-2xl bg-gradient-soft border border-brand-100 text-center max-w-sm w-full">
+                <div className="text-5xl mb-4">🚀</div>
+                <p className="text-slate-600 leading-relaxed">
+                  From small local businesses to growing enterprises — we build software that scales with you.
+                </p>
+              </div>
             </div>
           </div>
         </div>

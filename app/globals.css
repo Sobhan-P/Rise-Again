@@ -137,7 +137,7 @@ body {
 /* 92% width on mobile — reduce side padding */
 @media (max-width: 639px) {
   .max-w-7xl {
-    padding-left: 4% !important;
-    padding-right: 4% !important;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
   }
 }

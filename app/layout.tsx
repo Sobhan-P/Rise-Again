@@ -129,7 +129,9 @@ const jsonLd = {
     'Gym Management Software',
   ],
   founder: { '@type': 'Person', name: 'Rise Again Web Technologies' },
-  sameAs: [],
+  sameAs: [
+    'https://www.facebook.com/profile.php?id=61586668778273',
+  ],
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
     dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],

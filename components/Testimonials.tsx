@@ -20,6 +20,15 @@ const testimonials = [
     initials: 'BB',
     color: 'bg-emerald-500',
   },
+  {
+    name: 'Adlin Soniya',
+    role: 'Owner, Maham Finance',
+    location: 'Melpalai, Kanyakumari',
+    text: 'Good and valuable software',
+    rating: 5,
+    initials: 'AS',
+    color: 'bg-violet-500',
+  },
 ];
 
 export default function Testimonials() {

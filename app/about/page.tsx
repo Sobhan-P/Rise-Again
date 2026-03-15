@@ -3,9 +3,9 @@ import Link from 'next/link';
 import CTA from '@/components/CTA';
 
 export const metadata: Metadata = {
-  title: 'About Us — Rise Again Web Technologies',
+  title: 'About Us | Software & Web Development Company Nagercoil, Kanyakumari',
   description:
-    'Learn about Rise Again Web Technologies — a Tamil Nadu-based custom software development company building world-class digital products for businesses across India.',
+    'Rise Again Web Technologies is a software & web development company in Nagercoil, Kanyakumari. We serve businesses across Kanyakumari district — Marthandam, Colachel, Thuckalay, Padmanabhapuram — and all of Tamil Nadu.',
   alternates: { canonical: 'https://www.riseagaintech.com/about' },
 };
 
@@ -138,15 +138,21 @@ export default function AboutPage() {
       {/* Locations served */}
       <section className="section bg-surface">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="tag mb-4">📍 Serving All of Tamil Nadu</span>
+          <span className="tag mb-4">📍 Based in Nagercoil, Kanyakumari</span>
           <h2 className="text-3xl font-extrabold text-slate-900 mb-6">
-            Wherever You Are in Tamil Nadu, <span className="gradient-text">We&apos;re Here</span>
+            Serving Kanyakumari District &amp; <span className="gradient-text">All of Tamil Nadu</span>
           </h2>
-          <p className="text-slate-600 mb-8">
-            We work with businesses across Tamil Nadu — remotely and on-site. No location is too far for world-class software.
-          </p>
+          <p className="text-slate-700 mb-4 font-medium">Kanyakumari District</p>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            {['Nagercoil', 'Marthandam', 'Colachel', 'Thuckalay', 'Padmanabhapuram', 'Kuzhithurai', 'Eraniel', 'Killiyoor', 'Thiruvattar', 'Kaliakkavilai', 'Palliyadi', 'Melpalai'].map(city => (
+              <span key={city} className="px-4 py-2 bg-brand-50 rounded-xl border border-brand-100 text-sm font-medium text-brand-700 shadow-sm">
+                📍 {city}
+              </span>
+            ))}
+          </div>
+          <p className="text-slate-700 mb-4 font-medium">Tamil Nadu &amp; Beyond</p>
           <div className="flex flex-wrap justify-center gap-3">
-            {['Chennai', 'Coimbatore', 'Madurai', 'Salem', 'Tirunelveli', 'Trichy', 'Vellore', 'Erode', 'Tiruppur', 'Thanjavur', 'Dindigul', 'Kanyakumari'].map(city => (
+            {['Chennai', 'Coimbatore', 'Madurai', 'Salem', 'Tirunelveli', 'Trichy', 'Vellore', 'Erode', 'Tiruppur', 'Thanjavur'].map(city => (
               <span key={city} className="px-4 py-2 bg-white rounded-xl border border-slate-200 text-sm font-medium text-slate-700 shadow-sm">
                 📍 {city}
               </span>

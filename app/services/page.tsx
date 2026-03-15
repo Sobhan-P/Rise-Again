@@ -3,9 +3,9 @@ import Link from 'next/link';
 import CTA from '@/components/CTA';
 
 export const metadata: Metadata = {
-  title: 'Services — Custom Software Development Tamil Nadu',
+  title: 'Services | eCommerce, Finance Software, POS, Web Design — Nagercoil, Kanyakumari',
   description:
-    'Explore all services by Rise Again Web Technologies: Finance Software, POS Systems, Hospital Management, Billing, Gym Software, and custom web & app development in Tamil Nadu.',
+    'Web & software services in Nagercoil, Kanyakumari: eCommerce Websites, Finance Software, POS Systems, Portfolio Websites, Hospital Management, Billing Software, Gym Software. Serving all of Tamil Nadu & India.',
   alternates: { canonical: 'https://www.riseagaintech.com/services' },
 };
 

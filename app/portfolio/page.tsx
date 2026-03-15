@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import CTA from '@/components/CTA';
 
 export const metadata: Metadata = {
-  title: 'Portfolio — Our Software Projects',
+  title: 'Portfolio | Software Projects — Rise Again Web Technologies, Nagercoil',
   description:
-    'View projects built by Rise Again Web Technologies — POS systems, hospital management, finance software, gym software, and custom web applications for Tamil Nadu businesses.',
+    'Projects by Rise Again Web Technologies, Nagercoil — Finance Software, POS Systems, eCommerce Websites, Hospital Management, and custom web apps for businesses in Kanyakumari district and Tamil Nadu.',
   alternates: { canonical: 'https://www.riseagaintech.com/portfolio' },
 };
 

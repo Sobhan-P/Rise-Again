@@ -110,6 +110,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <meta name="google-site-verification" content="VhwZTY8iYO0BFmSUOMK7rqZs4rlWWM7PQlyoNXUZEg4" />
         <meta name="geo.region" content="IN-TN" />
         <meta name="geo.country" content="India" />
         <meta name="language" content="English" />

@@ -1,6 +1,5 @@
 'use client';
 import Link from 'next/link';
-import { useEffect, useRef } from 'react';
 
 const services = [
   'Finance Software', 'POS Systems', 'Hospital Management',
@@ -9,20 +8,6 @@ const services = [
 ];
 
 export default function Hero() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const items = el.querySelectorAll('.hero-item');
-    items.forEach((item, i) => {
-      setTimeout(() => {
-        (item as HTMLElement).style.opacity = '1';
-        (item as HTMLElement).style.transform = 'translateY(0)';
-      }, i * 120);
-    });
-  }, []);
-
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-hero pt-24 pb-16">
       {/* Background blobs */}
@@ -33,24 +18,18 @@ export default function Hero() {
       {/* Dot pattern */}
       <div className="absolute inset-0 dot-pattern opacity-40" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full" ref={ref}>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left content */}
           <div className="space-y-8 text-center lg:text-left">
             {/* Badge */}
-            <div
-              className="hero-item tag w-fit mx-auto lg:mx-0 opacity-0"
-              style={{ transform: 'translateY(20px)', transition: 'all 0.6s ease' }}
-            >
+            <div className="tag w-fit mx-auto lg:mx-0 hero-fade" style={{ animationDelay: '0ms' }}>
               <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse" />
               Tamil Nadu&apos;s Premier Software Company
             </div>
 
-            {/* Headline */}
-            <div
-              className="hero-item opacity-0"
-              style={{ transform: 'translateY(20px)', transition: 'all 0.6s ease' }}
-            >
+            {/* Headline — no animation delay so LCP is instant */}
+            <div>
               <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold leading-[1.08] tracking-tight text-slate-900">
                 We Build
                 <span className="block gradient-text">World-Class</span>
@@ -59,19 +38,15 @@ export default function Hero() {
             </div>
 
             {/* Sub */}
-            <p
-              className="hero-item text-lg md:text-xl text-slate-600 leading-relaxed max-w-lg mx-auto lg:mx-0 opacity-0"
-              style={{ transform: 'translateY(20px)', transition: 'all 0.6s ease' }}
-            >
+            <p className="hero-fade text-lg md:text-xl text-slate-600 leading-relaxed max-w-lg mx-auto lg:mx-0"
+              style={{ animationDelay: '120ms' }}>
               From custom finance systems to hospital management — we craft powerful,
               scalable software using <strong className="text-slate-800">React, Next.js, Node.js & MongoDB</strong> for businesses across Tamil Nadu.
             </p>
 
             {/* CTAs */}
-            <div
-              className="hero-item flex flex-wrap gap-4 justify-center lg:justify-start opacity-0"
-              style={{ transform: 'translateY(20px)', transition: 'all 0.6s ease' }}
-            >
+            <div className="hero-fade flex flex-wrap gap-4 justify-center lg:justify-start"
+              style={{ animationDelay: '240ms' }}>
               <Link href="/contact" className="btn-primary text-base px-7 py-3.5">
                 Start Your Project
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,10 +59,7 @@ export default function Hero() {
             </div>
 
             {/* Service pills */}
-            <div
-              className="hero-item opacity-0"
-              style={{ transform: 'translateY(20px)', transition: 'all 0.6s ease' }}
-            >
+            <div className="hero-fade" style={{ animationDelay: '360ms' }}>
               <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">We build</p>
               <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                 {services.map(s => (
@@ -100,10 +72,7 @@ export default function Hero() {
           </div>
 
           {/* Right — Visual card */}
-          <div
-            className="hero-item hidden lg:flex justify-center opacity-0"
-            style={{ transform: 'translateY(20px)', transition: 'all 0.6s ease' }}
-          >
+          <div className="hero-fade hidden lg:flex justify-center" style={{ animationDelay: '200ms' }}>
             <div className="relative w-full max-w-md animate-float">
               {/* Main card */}
               <div className="gradient-border shadow-card bg-white p-8 rounded-2xl">
@@ -183,7 +152,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

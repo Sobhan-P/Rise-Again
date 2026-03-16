@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- White background -->
+  <rect width="400" height="400" fill="#ffffff"/>
+
+  <!-- Blue accent bar top -->
+  <rect x="0" y="0" width="400" height="8" fill="url(#topbar)"/>
+
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="topbar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="riseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- "rise" text in blue -->
+  <text
+    x="200"
+    y="195"
+    font-family="Arial Black, Arial, sans-serif"
+    font-weight="900"
+    font-size="110"
+    fill="url(#riseGrad)"
+    text-anchor="middle"
+    letter-spacing="-2"
+  >rise</text>
+
+  <!-- "again" text in dark -->
+  <text
+    x="200"
+    y="295"
+    font-family="Arial Black, Arial, sans-serif"
+    font-weight="900"
+    font-size="110"
+    fill="#0f172a"
+    text-anchor="middle"
+    letter-spacing="-2"
+  >again</text>
+
+  <!-- Subtle bottom label -->
+  <text
+    x="200"
+    y="345"
+    font-family="Arial, sans-serif"
+    font-weight="600"
+    font-size="22"
+    fill="#94a3b8"
+    text-anchor="middle"
+    letter-spacing="4"
+  >WEB TECHNOLOGIES</text>
+
+  <!-- Blue accent bar bottom -->
+  <rect x="0" y="392" width="400" height="8" fill="url(#topbar)"/>
+</svg>
